@@ -19,7 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
+ip-*-pool*.txt
 # Virtual Environment
 .venv/
 venv/
@@ -44,6 +44,9 @@ my_results/
 
 # Test files
 examples/
+
+# Old/backup scripts
+old_scripts/
 
 # Additional markdown files (keep only README.md)
 DEPLOYMENT_SUCCESS.md
