@@ -320,4 +320,6 @@ Contributions are welcome! Please:
 
 ## Credits
 
+Special thanks to [Slipstreamplus-CLI](https://github.com/payeh/Slipstreamplus-CLI.git) project for the original scanner implementation.
+
 Enhanced with Claude Code
