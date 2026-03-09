@@ -287,26 +287,6 @@ For `realtest` command:
 4. **Timeouts**: Increase `--ready-timeout-ms` and `--timeout-s` for unstable networks
 5. **Load Balancing**: Use `tunnel-lb` mode for best performance and reliability
 
-## Architecture
-
-```
-┌─────────────┐
-│   dnstt.py  │  Main CLI entry point
-└──────┬──────┘
-       │
-       ├──────────────────────────────────────┐
-       │                                      │
-┌──────▼─────────────┐              ┌────────▼────────┐
-│ slipscan_cli_2n.py │              │   deploy_lb.py  │
-│  - scan            │              │  - HAProxy LB   │
-│  - realtest        │              └─────────────────┘
-└──────┬─────────────┘
-       │
-┌──────▼──────────┐
-│  ssh_client.py  │  Remote execution
-└─────────────────┘
-```
-
 ## License
 
 MIT License - See LICENSE file for details
